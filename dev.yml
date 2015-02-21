@@ -1,0 +1,15 @@
+- hosts: dev
+  sudo: yes
+  vars:
+    - mysql_root_password: "SuperP@S$w0rd"
+    - domain: "_"
+    - wpdirectory: "/webapps/help.teachbase/www"
+    - db_name: "wordpress"
+    - db_user: "wordpress"
+    - db_password: "wordpress"
+  roles:
+  - { role: nginx, tags: ['nginx'] }
+  - { role: percona-mysql, tags: ['mysql']  }
+  - { role: memcached, tags: ['memcached']  }
+  - { role: php5, tags: ['php']  }
+  - { role: wordpress, tags: ['wp']  }
