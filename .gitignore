@@ -1,1 +1,8 @@
-.vagrant
+*.sublime-*
+.DS_Store
+.vagrant/
+src/
+
+# production files
+host_vars/
+group_vars/selectel_production
