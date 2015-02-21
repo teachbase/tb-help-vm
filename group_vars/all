@@ -1,0 +1,6 @@
+mysql_root_password: "SuperP@S$w0rd"
+domain: "_"
+wpdirectory: "/webapps/help.teachbase/www"
+db_name: "wordpress"
+db_user: "wordpress"
+db_password: "wordpress"

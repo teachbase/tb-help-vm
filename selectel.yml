@@ -1,5 +1,6 @@
-- hosts: dev
+- hosts: selectel
   sudo: yes
+  remote_user: root
   roles:
   - { role: nginx, tags: ['nginx'] }
   - { role: percona-mysql, tags: ['mysql']  }
